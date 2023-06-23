@@ -1,3 +1,4 @@
+@import "../../styles/variaveis";
 .cta {
   font-family: Sora;
   font-size: 0.75rem;
@@ -6,16 +7,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  color: #434343;
+  color: $Night-80;
   width: 130px;
   height: 40px;
   border: none;
   border-radius: 2rem;
-  background-color: #e0ff66;
+  background-color: $Lime-60;
   cursor: pointer;
   transition: 200ms;
   &:hover {
-    background-color: black;
+    background-color: $Night-20;
     color: #e0ff66;
   }
 }
