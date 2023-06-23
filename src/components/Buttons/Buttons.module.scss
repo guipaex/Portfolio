@@ -1,0 +1,21 @@
+.cta {
+  font-family: Sora;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: #434343;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 2rem;
+  background-color: #e0ff66;
+  cursor: pointer;
+  transition: 200ms;
+  &:hover {
+    background-color: black;
+    color: #e0ff66;
+  }
+}

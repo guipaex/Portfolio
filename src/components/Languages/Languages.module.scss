@@ -1,0 +1,19 @@
+.languages {
+  width: 230px;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0;
+
+  &__lang {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #e0ff66;
+    flex-grow: 1;
+    font-family: Sora;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+  }
+}
