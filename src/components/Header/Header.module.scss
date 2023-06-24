@@ -1,0 +1,29 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $Magnolia;
+}
+.header {
+  background-color: $Night;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__navBar {
+    width: $desktop_md;
+    margin: auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.navBar__logo {
+  width: $menu_item;
+}

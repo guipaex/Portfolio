@@ -1,0 +1,127 @@
+@import "../../../styles/variaveis";
+@import "../../../styles/breakpoints";
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  font-family: "Sora";
+  font-size: 1rem;
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: $mobile) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      background: radial-gradient(circle at 0vw 50vh, rgba(192, 255, 0, 0.3) 0%, transparent 100%);
+      background-color: #14141475;
+      backdrop-filter: blur(15px);
+      transition: 500ms;
+      z-index: 1;
+
+      &--closed {
+        clip-path: circle(0 at top right);
+      }
+
+      &--open {
+        visibility: visible;
+        clip-path: circle(120% at top right);
+      }
+    }
+  }
+  &__item {
+    padding: 0.3rem 0.5rem;
+    font-weight: 600;
+    line-height: 1rem;
+  }
+}
+
+@mixin btn($size, $type) {
+  height: $size;
+  width: $size;
+
+  @if $type == "open" {
+    animation: closeMenu 300ms ease;
+  } @else {
+    animation: openMenu 300ms ease;
+  }
+}
+
+.menuButton {
+  min-width: $menu_item;
+  height: $menu_item;
+  border: none;
+  background: none;
+  display: none;
+  z-index: 100;
+
+  &__open {
+    @include btn(100%, "open");
+  }
+  &__close {
+    @include btn(100%, "close");
+  }
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.langButton {
+  cursor: not-allowed;
+  background: none;
+  border: none;
+
+  min-width: 5rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0 1rem;
+
+  font-size: 1rem;
+  color: $Night-40;
+  display: flex;
+  align-items: center;
+  &__icon {
+    fill: $Night-40;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@keyframes openMenu {
+  from {
+    scale: 0.5;
+    rotate: 0deg;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    rotate: 180deg;
+    opacity: 1;
+  }
+}
+
+@keyframes closeMenu {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}

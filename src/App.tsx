@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
 import RepoCard from "./components/RepoCard";
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <RepoCard />
+      <Header />
     </>
   );
 }

@@ -1,15 +1,21 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
 .card {
   font-family: Sora;
-  width: 280px;
+  width: fit-content;
   height: fit-content;
   padding: 1.2rem 1rem;
   margin: 1rem;
   border-radius: 1rem;
   background: linear-gradient(315deg, #1e1e1e 0%, #434343 100%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   box-shadow: drop-shadow(50px, black, 100px);
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
 
   &__title {
     width: 230px;
