@@ -1,0 +1,11 @@
+@keyframes rotativeLogo {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes arrowDown {
+  to {
+    transform: translateY(1rem);
+  }
+}

@@ -1,16 +1,34 @@
 import styles from "./Home.module.scss";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { FaGithub, FaLinkedin, FaRegEnvelope, FaBehance, FaAngleDown, FaChevronDown } from "react-icons/fa";
 
 export default function Home() {
   return (
     <>
-      <p>Olá, meu nome é</p>
-      <h1>Guilherme Paes</h1>
-      <h2>Desenvolvedor FullStack & Designer </h2>
-      <p>
-        Nascido e criado no Rio de Janeiro, sou formado em Design e atuo há 9 anos no mercado criativo, e estou migrando
-        para a área de Desenvolvimento Web. Aqui você irá encontrar os principais projetos que desenvolvi durante minha
-        jornada.
-      </p>
+      <div className={styles.container}>
+        <div className={styles.container__content}>
+          <h1 className={styles.container__title}>Guilherme Paes</h1>
+          <h4 className={styles.container__subtitle}>Desenvolvedor FullStack & Designer </h4>
+          <ul className={styles.listaLinks}>
+            <a href=''>
+              <FaGithub className={styles.listaLinks__link} />
+            </a>
+            <a href=''>
+              <FaLinkedin className={styles.listaLinks__link} />
+            </a>
+            <a href=''>
+              <FaRegEnvelope className={styles.listaLinks__link} />
+            </a>
+            <a href=''>
+              <FaBehance className={styles.listaLinks__link} />
+            </a>
+          </ul>
+          <FaChevronDown className={styles.skipper__arrow} />
+        </div>
+      </div>
+      <div className={styles.logo__container}>
+        <Logo className={styles.logo} />
+      </div>
     </>
   );
 }
