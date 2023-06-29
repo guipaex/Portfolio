@@ -11,17 +11,16 @@
 
   &__content {
     flex-shrink: 0;
+    margin: auto;
     @media (max-width: $mobile) {
-      margin: auto;
       text-align: center;
     }
   }
   &__title {
     font-size: clamp(1rem, 10vw, 5rem);
-    margin: 0;
   }
   &__subtitle {
-    margin: 1rem auto;
+    margin: auto;
     width: 70vw;
     color: $Lime;
     font-family: "Metana", sans-serif; //TEM QUE INSTALAR A FONTE

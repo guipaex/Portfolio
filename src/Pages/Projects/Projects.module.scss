@@ -1,0 +1,15 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
+.container {
+  margin: 2.5rem auto;
+  max-width: $desktop-md;
+  text-align: center;
+
+  &__title {
+    margin: auto;
+    font-size: 2rem;
+    color: $Lime;
+    max-width: 70vw;
+  }
+}

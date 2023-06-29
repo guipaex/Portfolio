@@ -1,0 +1,25 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+.container {
+  margin: auto;
+  max-width: 80%;
+  padding: 1rem;
+  border-top: 1px solid $Lime;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  flex-wrap: wrap;
+
+  text-align: left;
+}
+
+.listaLinks {
+  &__link {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 0.75rem;
+  }
+}
