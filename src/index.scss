@@ -8,8 +8,12 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(circle at -50px 90vh, rgba(192, 255, 0, 0.2) 0%, transparent 40%);
+  background: radial-gradient(circle at -50px 100vh, rgba(192, 255, 0, 0.2) 0%, transparent 25%);
   background-color: $Night;
+  @media (max-width: $mobile) {
+    background: radial-gradient(circle at -50px 100vh, rgba(192, 255, 0, 0.2) 0%, transparent 15%);
+    background-color: $Night;
+  }
 }
 
 code {

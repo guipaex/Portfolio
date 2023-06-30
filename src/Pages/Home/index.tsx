@@ -1,5 +1,6 @@
 import styles from "./Home.module.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
+import { Behance, Email, Github, Linkedin } from "../../components/Buttons/socialLinks";
 import { FaGithub, FaLinkedin, FaRegEnvelope, FaBehance, FaAngleDown, FaChevronDown } from "react-icons/fa";
 
 export default function Home() {
@@ -10,18 +11,10 @@ export default function Home() {
           <h1 className={styles.container__title}>Guilherme Paes</h1>
           <h4 className={styles.container__subtitle}>Desenvolvedor FullStack & Designer </h4>
           <ul className={styles.listaLinks}>
-            <a href=''>
-              <FaGithub className={styles.listaLinks__link} />
-            </a>
-            <a href=''>
-              <FaLinkedin className={styles.listaLinks__link} />
-            </a>
-            <a href=''>
-              <FaRegEnvelope className={styles.listaLinks__link} />
-            </a>
-            <a href=''>
-              <FaBehance className={styles.listaLinks__link} />
-            </a>
+            <Github />
+            <Linkedin />
+            <Behance />
+            <Email />
           </ul>
           <FaChevronDown className={styles.skipper__arrow} />
         </div>
