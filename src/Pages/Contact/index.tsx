@@ -5,8 +5,8 @@ export default function Contact() {
     <div className={styles.container}>
       <h2 className={styles.container__title}>Contato</h2>
       <p className={styles.container__text}>
-        Entre em contato, vamos conversar comigo pelo LinkedIn, ou me mande um e-mail para
-        <span> guipaex@gmail.com</span>
+        Entre em contato, vamos conversar comigo pelo LinkedIn, ou me mande um e-mail para{" "}
+        <span>guipaex@gmail.com</span>
       </p>
     </div>
   );
