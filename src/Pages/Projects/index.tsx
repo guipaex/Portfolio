@@ -2,6 +2,8 @@ import axios from "axios";
 import RepoCard from "../../components/RepoCard";
 import repositories from "../../localAPI/local.json";
 import styles from "./Projects.module.scss";
+import { useEffect, useState } from "react";
+import { Repo } from "../../types/repository";
 
 interface RepoData {
   id: number;
@@ -15,19 +17,35 @@ interface RepoData {
 
 export default function Projects() {
   const URL = "https://api.github.com/users/guipaex/repos";
+  const FILTER = "portfolio";
+
+  const [projects, setProjects] = useState<Repo[]>([]);
+
+  useEffect(() => {
+    axios
+      .get(URL)
+      .then((response) => {
+        const projects = response.data;
+        const selectedProjects = projects.filter((repo: Repo) => repo.topics?.includes(FILTER));
+        setProjects(selectedProjects);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
 
   return (
     <div className={styles.container}>
       <h2 className={styles.container__title}> Projetos Selecionados</h2>
-      {repositories.map((repo) => (
+      {projects.map((project) => (
         <RepoCard
-          key={repo.id}
-          name={repo.name}
-          repoLink={repo.html_url}
-          desc={repo.description}
-          demoLink={repo.homepage}
-          langsLink={repo.languages_url}
-          tags={repo.topics}
+          key={project.id}
+          name={project.name}
+          repoLink={project.html_url}
+          desc={project.description}
+          demoLink={project.homepage}
+          langsLink={project.languages_url}
+          tags={project.topics}
         />
       ))}
     </div>

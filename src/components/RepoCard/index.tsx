@@ -1,14 +1,11 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import styles from "./RepoCard.module.scss";
 import Buttons from "../Buttons";
-import { Link } from "react-router-dom";
 import { VscGithub } from "react-icons/vsc";
 import LangTags from "../LangTags/indexs";
 
 interface Props {
   name: string;
-  desc: string | null;
+  desc: string;
   demoLink: string | null;
   repoLink: string | null;
   langsLink: string;

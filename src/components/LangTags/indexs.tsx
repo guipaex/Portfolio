@@ -29,7 +29,11 @@ export default function LangTags(langURL: Props) {
       {Object.keys(languages)
         .slice(0, 3)
         .map((lang) => {
-          return <p className={styles.languages__lang}>{lang}</p>;
+          return (
+            <p key={lang} className={styles.languages__lang}>
+              {lang}
+            </p>
+          );
         })}
     </div>
   );
