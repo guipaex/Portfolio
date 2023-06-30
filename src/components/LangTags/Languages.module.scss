@@ -2,22 +2,22 @@
 @import "../../styles/breakpoints";
 
 .languages {
-  width: 230px;
+  width: 250px;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-  margin: 0;
+  margin: 0.5rem 0;
 
   &__lang {
     color: $Night;
     padding: 0.3rem 0.5rem;
     border-radius: 0.25rem;
-    background-color: #e0ff66;
+    background-color: $Lime-60;
     flex-grow: 1;
     font-family: Sora;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
-    line-height: 1;
+    line-height: 0.75rem;
     text-align: center;
   }
 }

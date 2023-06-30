@@ -1,6 +1,6 @@
 import styles from "./Home.module.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
-import { Behance, Email, Github, Linkedin } from "../../components/Buttons/socialLinks";
+import { Behance, Email, Github, Linkedin } from "../../components/Buttons";
 import { FaGithub, FaLinkedin, FaRegEnvelope, FaBehance, FaAngleDown, FaChevronDown } from "react-icons/fa";
 
 export default function Home() {

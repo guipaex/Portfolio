@@ -5,11 +5,40 @@
   margin: 2.5rem auto;
   max-width: $desktop-md;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
   &__title {
     margin: auto;
     font-size: 2rem;
     color: $Lime;
     max-width: 70vw;
+  }
+}
+
+.projectsGallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  justify-content: center;
+
+  @media (max-width: $mobile) {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow-x: scroll;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $Night-80;
+    border-radius: 1rem;
+    margin: 35vw;
+  }
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: $Night-40;
   }
 }

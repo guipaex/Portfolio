@@ -4,16 +4,6 @@ import styles from "./Projects.module.scss";
 import { useEffect, useState } from "react";
 import { Repo } from "../../types/repository";
 
-interface RepoData {
-  id: number;
-  name: string;
-  desc: string;
-  demoLink: string | null;
-  repoLink: string | null;
-  langsLink: string;
-  tags: Array<string>;
-}
-
 export default function Projects() {
   const URL = "https://api.github.com/users/guipaex/repos";
   const FILTER = "portfolio";
@@ -36,17 +26,19 @@ export default function Projects() {
   return (
     <div className={styles.container}>
       <h2 className={styles.container__title}> Projetos Selecionados</h2>
-      {projects.map((project) => (
-        <RepoCard
-          key={project.id}
-          name={project.name}
-          repoLink={project.html_url}
-          desc={project.description}
-          demoLink={project.homepage}
-          langsLink={project.languages_url}
-          tags={project.topics}
-        />
-      ))}
+      <div className={styles.projectsGallery}>
+        {projects.map((project) => (
+          <RepoCard
+            key={project.id}
+            name={project.name}
+            repoLink={project.html_url}
+            desc={project.description}
+            demoLink={project.homepage}
+            langsLink={project.languages_url}
+            tags={project.topics}
+          />
+        ))}
+      </div>
     </div>
   );
 }

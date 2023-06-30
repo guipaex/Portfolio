@@ -3,64 +3,61 @@
 
 .card {
   font-family: Sora;
-  width: fit-content;
-  height: fit-content;
-  padding: 1.2rem 1rem;
+  padding: 1rem 2rem;
   margin: 1rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   background: linear-gradient(315deg, #1e1e1e 0%, #434343 100%);
   display: flex;
   align-items: center;
   box-shadow: drop-shadow(50px, black, 100px);
-
-  @media (max-width: $mobile) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 
   &__title {
-    width: 230px;
-    height: 20px;
-    margin: 0.25rem 0;
-
+    width: 250px;
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
     color: #f7f0f5;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 800;
   }
   &__description {
-    width: 230px;
-    height: 60px;
+    width: 250px;
+    height: 3.5rem;
+    margin: 0.5rem 0;
     color: #d0d0d0;
     font-size: 0.8rem;
   }
 
   &__buttons {
     margin: 0.5rem;
-    width: 230px;
-    justify-content: space-between;
+    width: 250px;
     display: flex;
+    justify-content: space-between;
   }
 }
 .thumbnail {
-  width: 230px;
-  height: 230px;
+  width: 250px;
+  height: 250px;
   background-color: #d0d0d0;
-  border-radius: 1rem;
-  display: flex;
+  border-radius: 0.75rem;
   align-items: center;
   justify-content: center;
   margin: 1.2rem 0;
 
   &__img {
-    width: 350px;
+    width: 300px;
+    position: relative;
+    top: -1.5rem;
+    left: -1.5rem;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
   }
 }
 
 .gitButton {
-  color: #434343;
+  fill: $Night-60;
   transition: 200ms;
   cursor: pointer;
   &:hover {
-    color: #d0d0d0;
+    fill: $Night-20;
   }
 }
