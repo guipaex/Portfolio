@@ -2,8 +2,12 @@
 @import "../../styles/breakpoints";
 
 .container {
-  margin: auto;
+  margin: 2rem auto;
   max-width: $desktop-md;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   &__title {
     font-size: 2rem;
