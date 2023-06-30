@@ -1,7 +1,6 @@
 import axios from "axios";
 import styles from "./Languages.module.scss";
 import { useEffect, useState } from "react";
-import { error } from "console";
 
 interface Props {
   url: string;

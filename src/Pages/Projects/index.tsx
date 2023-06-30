@@ -1,6 +1,5 @@
 import axios from "axios";
 import RepoCard from "../../components/RepoCard";
-import repositories from "../../localAPI/local.json";
 import styles from "./Projects.module.scss";
 import { useEffect, useState } from "react";
 import { Repo } from "../../types/repository";

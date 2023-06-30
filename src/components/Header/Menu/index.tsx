@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { PiListBold, PiXBold, PiGlobeDuotone, PiCaretDownFill } from "react-icons/pi";
+import { PiListBold, PiXBold } from "react-icons/pi";
 import styles from "./Menu.module.scss";
 import classNames from "classnames";
-import React from "react";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,12 +28,6 @@ export default function Menu() {
           Contato
         </a>
       </ul>
-      {/* 
-      <button className={styles.langButton}>
-        <PiGlobeDuotone className={styles.langButton__icon} />
-        Pt-Br
-        <PiCaretDownFill /> 
-      </button>*/}
     </nav>
   );
 }
