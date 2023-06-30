@@ -4,7 +4,7 @@
 .container {
   margin: 2rem auto;
   max-width: $desktop-md;
-  height: 70vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;

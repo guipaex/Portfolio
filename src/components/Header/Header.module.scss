@@ -10,15 +10,15 @@
 }
 .header {
   background-color: $Night;
-  height: 75px;
-  width: 100%;
+  height: 85px;
+  width: 100vw;
   display: flex;
   align-items: center;
-
+  margin: auto;
   &__navBar {
-    width: $desktop_md;
+    width: 90vw;
     margin: auto;
-    padding: 0 2rem;
+    max-width: $desktop_md;
     display: flex;
     align-items: center;
     justify-content: space-between;
