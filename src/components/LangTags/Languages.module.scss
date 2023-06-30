@@ -1,3 +1,6 @@
+@import "../../styles/variaveis";
+@import "../../styles/breakpoints";
+
 .languages {
   width: 230px;
   display: flex;
@@ -6,6 +9,7 @@
   margin: 0;
 
   &__lang {
+    color: $Night;
     padding: 0.3rem 0.5rem;
     border-radius: 0.25rem;
     background-color: #e0ff66;

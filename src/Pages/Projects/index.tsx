@@ -7,15 +7,14 @@ interface RepoData {
   id: number;
   name: string;
   desc: string;
-  demoLink: string;
-  repoLink: string;
-  languages_url: string;
+  demoLink: string | null;
+  repoLink: string | null;
+  langsLink: string;
   tags: Array<string>;
 }
 
 export default function Projects() {
   const URL = "https://api.github.com/users/guipaex/repos";
-  console.log(repositories);
 
   return (
     <div className={styles.container}>
@@ -27,7 +26,7 @@ export default function Projects() {
           repoLink={repo.html_url}
           desc={repo.description}
           demoLink={repo.homepage}
-          languages_url={repo.languages_url}
+          langsLink={repo.languages_url}
           tags={repo.topics}
         />
       ))}
