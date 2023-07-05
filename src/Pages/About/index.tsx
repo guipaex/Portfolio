@@ -18,7 +18,8 @@ export default function About() {
     <div className={styles.container}>
       <h2 className={styles.container__title}> Sobre Mim </h2>
       <p className={styles.container__text}>
-        Nascido e criado no Rio de Janeiro, atuei como designer há 9 anos. E hoje, atuo na área de Desenvolvimento Web.
+        Nascido e criado no Rio de Janeiro, atuei como designer durante 9 anos. Hoje atuo na área de Desenvolvimento
+        Web.
         <br />
         <br />
         Para entregar o melhor possível para o usuário, me aprofundei em ferramentas e frameworks essenciais para o
