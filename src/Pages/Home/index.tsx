@@ -21,7 +21,6 @@ export default function Home() {
           <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500}>
             <FaChevronDown className={styles.skipper__arrow} />
           </Link>
-          {/* <FaChevronDown onClick={scrollTop} className={styles.skipper__arrow} /> */}
         </div>
       </div>
       <div className={styles.logo__container}>

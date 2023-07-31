@@ -7,8 +7,7 @@ ul {
 
 .menu {
   max-width: 50%;
-  display: flex;
-  align-items: center;
+  height: 1rem;
   font-family: "Sora";
   font-size: 1rem;
 
@@ -48,6 +47,11 @@ ul {
     font-weight: 600;
     line-height: 1rem;
     cursor: pointer;
+
+    &:hover {
+      color: $Lime;
+      transition: 500ms;
+    }
   }
 }
 
