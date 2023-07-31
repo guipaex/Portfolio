@@ -24,7 +24,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='projects'>
       <h2 className={styles.container__title}> Projetos Selecionados</h2>
       <div className={styles.projectsGallery}>
         {projects.map((project) => (

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import { PiListBold, PiXBold } from "react-icons/pi";
 import styles from "./Menu.module.scss";
 import classNames from "classnames";
@@ -18,15 +19,45 @@ export default function Menu() {
           [styles["menu__links--closed"]]: !isOpen,
         })}
       >
-        <a className={styles.menu__item} href=''>
-          Sobre
-        </a>
-        <a className={styles.menu__item} href=''>
-          Projetos
-        </a>
-        <a className={styles.menu__item} href=''>
-          Contato
-        </a>
+        <li>
+          <Link
+            className={styles.menu__item}
+            activeClass='active'
+            to='about'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Sobre
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.menu__item}
+            activeClass='active'
+            to='projects'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Projetos
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.menu__item}
+            activeClass='active'
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Contato
+          </Link>
+        </li>
       </ul>
     </nav>
   );

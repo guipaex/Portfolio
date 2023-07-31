@@ -15,7 +15,7 @@ import {
 } from "react-icons/si";
 export default function About() {
   return (
-    <div className={styles.container}>
+    <div id='about' className={styles.container}>
       <h2 className={styles.container__title}> Sobre Mim </h2>
       <p className={styles.container__text}>
         Nascido e criado no Rio de Janeiro, atuei como designer durante 9 anos. Hoje atuo na área de Desenvolvimento
