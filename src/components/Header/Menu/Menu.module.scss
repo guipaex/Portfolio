@@ -30,7 +30,7 @@ ul {
       background-color: #14141475;
       backdrop-filter: blur(15px);
       transition: 500ms;
-      z-index: 1;
+      z-index: -1;
 
       &--closed {
         clip-path: circle(0 at top right);
