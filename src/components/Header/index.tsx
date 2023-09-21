@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "../../assets/favicon.svg";
+import { ReactComponent as Logo } from "../../assets/logo_fill.svg";
 import styles from "./Header.module.scss";
 import Menu from "./Menu";
 

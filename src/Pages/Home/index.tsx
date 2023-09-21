@@ -6,25 +6,18 @@ import { FaChevronDown } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div id='home'>
-      <div className={styles.container}>
-        <div className={styles.container__content}>
-          <h1 className={styles.container__title}>Guilherme Paes</h1>
-          <h4 className={styles.container__subtitle}>Desenvolvedor FullStack & Designer </h4>
-          <ul className={styles.listaLinks}>
-            <Github />
-            <Linkedin />
-            <Behance />
-            <Email />
-          </ul>
-
-          <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500}>
-            <FaChevronDown className={styles.skipper__arrow} />
-          </Link>
-        </div>
-      </div>
-      <div className={styles.logo__container}>
-        <Logo className={styles.logo} />
+    <div id='home' className={styles.container}>
+      <div className={styles.container__content}>
+        <p className={styles.container__text}>Hello, there! I'm</p>
+        <h1 className={styles.container__title}>
+          Guilherme Paes<span className={styles.text__highlight}>.</span>
+        </h1>
+        <p className={styles.container__text}>
+          A <span className={styles.bold}>Web Developer</span> and <span className={styles.bold}>Designer</span>.
+        </p>
+        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500}>
+          <FaChevronDown className={styles.skipper__arrow} />
+        </Link>
       </div>
     </div>
   );
