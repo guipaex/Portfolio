@@ -1,7 +1,5 @@
 import styles from "./Home.module.scss";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { Link } from "react-scroll";
-import { Behance, Email, Github, Linkedin } from "../../components/Buttons";
 import { FaChevronDown } from "react-icons/fa";
 
 export default function Home() {
