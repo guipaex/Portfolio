@@ -13,8 +13,8 @@ function App() {
       <Header />
       <Home />
       {/*<About />
-      <Projects />
-      <Contact />*/}
+      <Projects />*/}
+      <Contact />
       <Footer />
     </>
   );
