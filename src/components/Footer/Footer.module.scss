@@ -1,25 +1,20 @@
 @import "../../styles/variaveis";
 @import "../../styles/breakpoints";
 .container {
-  border-top: 1px solid $Lime;
+  width: clamp(20rem, 70vw, 90vw);
+  height: fit-content;
+  padding: 0.5rem 1rem;
   margin: auto;
-  padding: 0 2rem;
-  display: flex;
-  width: 80%;
-  max-width: 1440px;
-  align-items: center;
-  justify-content: space-between;
-  height: 5rem;
-  text-align: center;
+  margin-bottom: 0.7rem;
   font-size: 0.75rem;
-  flex-wrap: wrap;
-  text-align: left;
+  font-weight: 700;
+  color: $Night;
+  background-color: $Lime;
+  border-radius: 0.3rem;
 }
 
-.listaLinks {
-  &__link {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin: 0 0.5rem;
-  }
+.link {
+  text-decoration: underline;
+  color: $Night;
+  font-weight: 800;
 }

@@ -5,10 +5,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  color: $Magnolia;
 }
 .header {
+  text-decoration: none;
   position: absolute;
   height: 85px;
   width: 100%;
@@ -16,6 +15,7 @@
   align-items: center;
   margin: auto;
   z-index: 100;
+  color: $Magnolia;
   &__navBar {
     width: 90vw;
     margin: 0 auto;
