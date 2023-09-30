@@ -2,20 +2,106 @@
 @import "../../styles/breakpoints";
 
 .container {
-  margin: 2rem auto;
-  max-width: $desktop-md;
+  width: 100%;
   height: fit-content;
+  padding: 3rem 1rem;
+  color: $Magnolia;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  &__title {
-    font-size: 2rem;
+}
+
+.title {
+  margin: auto;
+  font-size: 2.25rem;
+  font-weight: 400;
+  &__dot {
     color: $Lime;
   }
+  @media (max-width: $mobile) {
+    text-align: left;
+    width: 12rem;
+    position: relative;
+    top: 1.5rem;
+    left: 5rem;
+    z-index: 2;
+  }
+}
+.content {
+  // @media (max-width: $mobile) {
+  //   z-index: -1;
+  // }
+  // max-width: 900px;
+  // display: flex;
+  // justify-content: center;
+  // margin: auto;
+  // align-items: center;
+}
+.photo {
+  @media (max-width: $mobile) {
+    max-width: 12rem;
+    position: relative;
+    top: -6.5rem;
+    left: -5rem;
+    margin-left: 1.5rem;
+    z-index: 1;
+    // background-color: aqua;
+  }
+}
+
+.highlight {
+  font-weight: 800;
+}
+button,
+.resume {
+  width: 90%;
+  height: fit-content;
+  color: $Night-80;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: normal;
+  border: hidden;
+  background: transparent;
+}
+.textBox {
+  @media (max-width: $mobile) {
+    position: relative;
+    top: -10rem;
+  }
+  width: clamp(20.5rem, 50%, 40vw);
+  height: fit-content;
+  padding: 3rem 0rem;
+  margin: 0 auto;
+  background-color: #0f0f0f;
+  border-radius: 0.5rem;
+  &__social {
+    position: relative;
+    top: -2.2rem;
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    margin: auto;
+    margin-right: 1.5rem;
+    justify-content: right;
+
+    & a {
+      color: $Night-80;
+      display: flex;
+      z-index: 0;
+      & .linkIcon {
+        width: 1.6rem;
+        height: 100%;
+      }
+    }
+  }
   &__text {
-    margin: 2rem auto;
-    width: 70vw;
+    text-align: center;
+    margin: auto 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
   }
 }
 

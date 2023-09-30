@@ -1,27 +1,65 @@
 import styles from "./About.module.scss";
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiMysql,
-  SiMongodb,
-  SiGit,
-  SiNodedotjs,
-  SiSass,
-  SiFigma,
-  SiGithub,
-} from "react-icons/si";
+import MyPhoto from "../../assets/guipaex.png";
+import { FaLinkedin, FaGithub, FaBehance } from "react-icons/fa6";
+// import {
+//   SiHtml5,
+//   SiCss3,
+//   SiJavascript,
+//   SiTypescript,
+//   SiReact,
+//   SiMysql,
+//   SiMongodb,
+//   SiGit,
+//   SiNodedotjs,
+//   SiSass,
+//   SiFigma,
+//   SiGithub,
+// } from "react-icons/si";
 export default function About() {
   return (
-    <div id='about' className={styles.container}>
-      <h2 className={styles.container__title}> Sobre Mim </h2>
-      <p className={styles.container__text}>
-        I’m from Rio de Janeiro with 10 years of experience as a Designer in a lot of advertising agencies. Now, as a
-        Web Developer, I use my experience to design build beautiful interfaces. Besides my work, I love learning new
-        things, travel and new experiences.
-        <br />
+    <section id='about' className={styles.container}>
+      <h2 className={styles.title}>
+        More <span className={styles.highlight}>about me</span>
+        <span className={styles.title__dot}>.</span>
+      </h2>
+      <div className={styles.content}>
+        <img src={MyPhoto} alt='Guilherme Paes smiling' className={styles.photo} />
+        <div className={styles.textBox}>
+          <ul className={styles.textBox__social}>
+            <li>
+              <a href='https://www.linkedin.com/in/guilhermepaes/' target='_blank' rel='noreferrer'>
+                <FaLinkedin className={styles.linkIcon} />
+              </a>
+            </li>
+            <li>
+              <a href='https://github.com/guipaex' target='_blank' rel='noreferrer'>
+                <FaGithub className={styles.linkIcon} />
+              </a>
+            </li>
+            <li>
+              <a href='https://www.behance.net/guilhermepaes' target='_blank' rel='noreferrer'>
+                <FaBehance className={styles.linkIcon} />
+              </a>
+            </li>
+          </ul>
+          <p className={styles.textBox__text}>
+            I’m from Rio de Janeiro with 10 years of experience as a <span className={styles.highlight}>Designer </span>
+            in a lot of advertising agencies. Now, as a <span className={styles.highlight}>Web Developer</span>, I use
+            my experience to design build beautiful interfaces.
+          </p>
+          <button>
+            <a
+              className={styles.resume}
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://drive.google.com/file/d/19l2tbklUnSWXVQcW9Y8cSPNs1T2bL2Ou/view?usp=sharing'
+            >
+              Donwload Resume
+            </a>
+          </button>
+        </div>
+      </div>
+      {/* <br />
         <br />
         Para entregar o melhor possível para o usuário, me aprofundei em ferramentas e frameworks essenciais para o
         desenvolvimento Full Stack:
@@ -43,7 +81,8 @@ export default function About() {
       <p className={styles.container__text}>
         Unindo minhas habilidades em design com a paixão pela tecnologia, obtenho uma visão única e valiosa para
         desenvolvimento de produtos digitais.
-      </p>
-    </div>
+      </p> */}
+      <p>Besides my work, I love learning new things, travel and new experiences.</p>
+    </section>
   );
 }
