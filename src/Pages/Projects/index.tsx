@@ -16,7 +16,7 @@ export default function Projects() {
       .then((response) => {
         const projects = response.data;
         const selectedProjects = projects.filter((repo: Repo) => repo.topics?.includes(FILTER));
-        setProjects(selectedProjects);
+        setProjects(selectedProjects.reverse());
       })
       .catch((error) => {
         console.error(error);
@@ -24,8 +24,10 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className={styles.container} id='projects'>
-      <h2 className={styles.container__title}> Projetos Selecionados</h2>
+    <section className={styles.container} id='projects'>
+      <h2 className={styles.title}>
+        Selected Works<span className={styles.title__dot}>.</span>
+      </h2>
       <div className={styles.projectsGallery}>
         {projects.map((project) => (
           <RepoCard
@@ -39,6 +41,6 @@ export default function Projects() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
