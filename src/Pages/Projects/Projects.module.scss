@@ -2,7 +2,8 @@
 @import "../../styles/breakpoints";
 
 .container {
-  width: 100%;
+  width: 100vw;
+  max-width: 900px;
   height: fit-content;
   margin: 2.5rem auto;
   padding: 3rem 0;
@@ -22,6 +23,7 @@
     color: $Lime;
     font-weight: 400;
   }
+  margin: 5rem auto;
 }
 
 .projectsGallery {
@@ -34,12 +36,13 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     width: 100vw;
+    padding-bottom: 2rem;
     overflow-x: scroll;
   }
   &::-webkit-scrollbar-track {
     background-color: $Night-80;
     border-radius: 1rem;
-    margin: 35vw;
+    margin: 7rem;
   }
   &::-webkit-scrollbar {
     height: 0.5rem;

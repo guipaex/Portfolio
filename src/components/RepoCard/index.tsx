@@ -26,11 +26,11 @@ export default function RepoCard(repo: Props) {
         <img className={styles.thumbnail__img} src={imgURL} alt={repo.name}></img>
       </div>
       <LangTags url={repo.langsLink} />
-      <h1 className={styles.card__title}>{repo.name.replace(/[-]+/g, " ")}</h1>
-      <p className={styles.card__description}>{repo.desc}</p>
+      <h3 className={styles.card__title}>{repo.name.replace(/[-]+/g, " ")}</h3>
+      {/* <p className={styles.card__description}>{repo.desc}</p> */}
       <div className={styles.card__buttons}>
         <a href={`${repo.repoLink}`} target='_blank'>
-          <VscGithub size={35} className={styles.gitButton} />
+          <VscGithub size={32} className={styles.gitButton} />
         </a>
         <a href={`${repo.demoLink}`} target='_blank'>
           <VerProjeto />

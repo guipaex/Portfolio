@@ -2,56 +2,55 @@
 @import "../../styles/breakpoints";
 
 .card {
-  font-family: Sora;
-  padding: 1rem 2rem;
+  max-width: 15rem;
+  height: fit-content;
+  padding: 1rem 1.5rem;
   margin: 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background: linear-gradient(315deg, #1e1e1e 0%, #434343 100%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   box-shadow: drop-shadow(50px, black, 100px);
-  flex-direction: column;
 
   &__title {
-    width: 250px;
+    width: 100%;
     line-height: 1.5rem;
-    margin: 0.5rem 0;
-    color: #f7f0f5;
-    font-size: 1.5rem;
-    font-weight: 800;
+    margin: 0.25rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   &__description {
-    width: 250px;
-    height: 3.5rem;
+    width: 100%;
+    height: 2rem;
     margin: 0.5rem 0;
-    color: #d0d0d0;
     font-size: 0.8rem;
+    overflow: hidden;
   }
-
   &__buttons {
     margin: 0.5rem;
-    width: 250px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
   @media (max-width: $mobile) {
-    margin: 0.5rem;
+    margin: 0.75rem;
   }
 }
 .thumbnail {
-  width: 250px;
-  height: 250px;
+  width: 12rem;
+  height: 12rem;
   background-color: #d0d0d0;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   align-items: center;
   justify-content: center;
-  margin: 1.2rem 0;
+  margin: 0.5rem 0;
 
   &__img {
-    width: 300px;
+    width: 120%;
     position: relative;
-    top: -1.5rem;
-    left: -1.5rem;
+    top: -1.2rem;
+    left: -1.2rem;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
   }
 }
