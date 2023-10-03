@@ -58,6 +58,7 @@ export default function About() {
             </a>
           </button>
         </div>
+
         <p className={styles.text}>These are some of technologies that I most use:</p>
         <div className={styles.listaStack}>
           <SiHtml5 className={styles.listaStack__item} />
