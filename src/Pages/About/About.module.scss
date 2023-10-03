@@ -30,7 +30,6 @@
 }
 .content {
   @media (max-width: $mobile) {
-    z-index: -1;
     flex-direction: column;
   }
   max-width: 900px;
@@ -88,7 +87,6 @@ button,
     & a {
       color: $Night-80;
       display: flex;
-      z-index: 0;
       & .linkIcon {
         width: 1.6rem;
         height: 100%;
@@ -105,10 +103,14 @@ button,
   }
 }
 
+a:hover {
+  color: $Lime;
+  transition: 300ms;
+}
 .text {
   position: relative;
   top: -8rem;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 

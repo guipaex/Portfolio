@@ -13,7 +13,7 @@ export default function Home() {
         <p className={styles.container__text}>
           A <span className={styles.bold}>Web Developer</span> and <span className={styles.bold}>Designer</span>.
         </p>
-        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500}>
+        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500}>
           <FaChevronDown className={styles.skipper__arrow} />
         </Link>
       </div>

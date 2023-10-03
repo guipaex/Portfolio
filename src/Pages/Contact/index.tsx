@@ -12,23 +12,21 @@ export default function Contact() {
           Send a e-mail to: <a href='mailto:guipaex@gmail.com'>guipaex@gmail.com</a>
         </p>
 
-        <p className={styles.list}>
-          or follow me at:{" "}
-          <ul className={styles.list__links}>
-            <a href='http://behance.net/guilhermepaes' target='_blank' rel='noopener noreferrer'>
-              <FaBehance className={styles.list__icon} />
-            </a>
-            <a href='https://www.instagram.com/guipaex' target='_blank' rel='noopener noreferrer'>
-              <FaInstagram className={styles.list__icon} />
-            </a>
-            <a href='https://github.com/guipaex/' target='_blank' rel='noopener noreferrer'>
-              <FaGithub className={styles.list__icon} />
-            </a>
-            <a href='https://www.linkedin.com/in/guilhermepaes/' target='_blank' rel='noopener noreferrer'>
-              <FaLinkedin className={styles.list__icon} />
-            </a>
-          </ul>
-        </p>
+        <p className={styles.list}>or follow me at:</p>
+        <ul className={styles.list__links}>
+          <a href='http://behance.net/guilhermepaes' target='_blank' rel='noopener noreferrer'>
+            <FaBehance className={styles.list__icon} />
+          </a>
+          <a href='https://www.instagram.com/guipaex' target='_blank' rel='noopener noreferrer'>
+            <FaInstagram className={styles.list__icon} />
+          </a>
+          <a href='https://github.com/guipaex/' target='_blank' rel='noopener noreferrer'>
+            <FaGithub className={styles.list__icon} />
+          </a>
+          <a href='https://www.linkedin.com/in/guilhermepaes/' target='_blank' rel='noopener noreferrer'>
+            <FaLinkedin className={styles.list__icon} />
+          </a>
+        </ul>
       </div>
     </section>
   );

@@ -54,7 +54,7 @@ export default function About() {
               rel='noopener noreferrer'
               href='https://drive.google.com/file/d/19l2tbklUnSWXVQcW9Y8cSPNs1T2bL2Ou/view?usp=sharing'
             >
-              Donwload Resume
+              Download Resume
             </a>
           </button>
         </div>
