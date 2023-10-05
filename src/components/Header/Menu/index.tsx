@@ -29,7 +29,7 @@ export default function Menu() {
             offset={-100}
             duration={500}
           >
-            Sobre
+            About
           </Link>
         </li>
         <li>
@@ -42,7 +42,7 @@ export default function Menu() {
             offset={-100}
             duration={500}
           >
-            Projetos
+            Projects
           </Link>
         </li>
         <li>
@@ -55,7 +55,7 @@ export default function Menu() {
             offset={-100}
             duration={500}
           >
-            Contato
+            Contact
           </Link>
         </li>
       </ul>

@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 0 1rem;
-  width: 7rem;
+  width: 5rem;
   height: 2.25rem;
   border: 1px solid $Lime-60;
   background: transparent;
@@ -17,7 +17,6 @@
     right: 0;
     left: 0;
     position: relative;
-    font-family: Sora;
     font-size: 0.75rem;
     font-weight: 700;
     color: $Night-20;
@@ -38,10 +37,10 @@
     }
     .cta__txt {
       color: $Night-80;
-      left: -0.5rem;
+      left: -0.75rem;
     }
 
-    width: 7.75rem;
+    width: 5.5rem;
     background-color: $Lime;
     color: $Night;
   }

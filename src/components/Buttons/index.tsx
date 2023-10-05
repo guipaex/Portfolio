@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaRegEnvelope, FaBehance, FaAngleDown, FaChevronDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaRegEnvelope, FaBehance } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import styles from "./Buttons.module.scss";
 
@@ -37,7 +37,7 @@ function Email() {
 function VerProjeto() {
   return (
     <button className={styles.cta}>
-      <span className={styles.cta__txt}>Ver Projeto</span>
+      <span className={styles.cta__txt}>Visit</span>
       <HiArrowNarrowRight className={styles.cta__arrow} size={20} />
     </button>
   );
