@@ -1,21 +1,17 @@
 @import "../../styles/variables";
 @import "../../styles/breakpoints";
-.container {
-  width: clamp(20rem, 70vw, 90vw);
-  height: fit-content;
+footer {
   padding: 0.5rem 1rem;
   margin: auto;
-  margin-bottom: 0.7rem;
-  font-size: 0.75rem;
-  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
   color: $Night;
-  background-color: $Lime;
   border-radius: 0.3rem;
   text-align: center;
+  color: $Magnolia;
 }
 
-.link {
-  text-decoration: underline;
-  color: $Night;
-  font-weight: 800;
+footer a {
+  color: $Lime;
 }
