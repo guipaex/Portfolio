@@ -33,3 +33,15 @@ code {
   background: radial-gradient(rgba(192, 255, 0, 0.05) 0%, transparent 35%);
   z-index: -100;
 }
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  width: 0.2rem;
+  border-radius: 13px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: $Lime;
+}
