@@ -9,7 +9,8 @@ export default function Contact() {
           <span className={styles.title__dot}>.</span>
         </h2>
         <p className={styles.email}>
-          Send me an e-mail: <a href='mailto:guipaex@gmail.com'>guipaex@gmail.com</a>
+          Send me an e-mail: <br />
+          <a href='mailto:guipaex@gmail.com'>guipaex@gmail.com</a>
         </p>
 
         <p className={styles.list}>or follow me at:</p>
