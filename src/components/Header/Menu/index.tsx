@@ -20,41 +20,17 @@ export default function Menu() {
         })}
       >
         <li>
-          <Link
-            className={styles.menu__item}
-            activeClass='active'
-            to='about'
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
+          <Link className={styles.menu__item} to='about' smooth={true}>
             About
           </Link>
         </li>
         <li>
-          <Link
-            className={styles.menu__item}
-            activeClass='active'
-            to='projects'
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
+          <Link className={styles.menu__item} to='projects' smooth={true}>
             Projects
           </Link>
         </li>
         <li>
-          <Link
-            className={styles.menu__item}
-            activeClass='active'
-            to='contact'
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
+          <Link className={styles.menu__item} to='contact' smooth={true}>
             Contact
           </Link>
         </li>

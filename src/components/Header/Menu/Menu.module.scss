@@ -43,13 +43,25 @@ ul {
   }
   &__item {
     padding: 0.3rem 0.5rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1rem;
     cursor: pointer;
-
-    &:hover {
-      color: $Lime;
-      transition: 500ms;
+    position: relative;
+    &:hover::after {
+      width: 95%;
+      left: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      bottom: 3px;
+      left: 50%;
+      width: 0%;
+      height: 2px;
+      background-color: $Lime;
+      transition-timing-function: ease-in;
+      transition: 300ms;
     }
   }
 }
