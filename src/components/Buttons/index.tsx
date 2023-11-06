@@ -1,5 +1,6 @@
-import { FaGithub, FaLinkedin, FaRegEnvelope, FaBehance } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaRegEnvelope, FaBehance, FaEye } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { BsArrowUpRightCircle } from "react-icons/bs";
 import styles from "./Buttons.module.scss";
 
 function Linkedin() {
@@ -34,13 +35,36 @@ function Email() {
   );
 }
 
-function VerProjeto() {
+const VerProjeto = () => {
   return (
     <button className={styles.cta}>
       <span className={styles.cta__txt}>Visit</span>
       <HiArrowNarrowRight className={styles.cta__arrow} size={20} />
     </button>
   );
+};
+
+interface ButtonProps {
+  text: string;
+  link: string | null;
 }
 
-export { Github, Linkedin, Email, Behance, VerProjeto };
+const Repository = ({ text, link }: ButtonProps) => {
+  return (
+    <a href={`${link}`} target='_blank' className={styles.repoBtn}>
+      <FaGithub className={styles.repoBtn__icon} size={32} />
+      {text}
+    </a>
+  );
+};
+
+const Demo = ({ text, link }: ButtonProps) => {
+  return (
+    <a href={`${link}`} target='_blank' className={styles.demoBtn}>
+      {text}
+      <BsArrowUpRightCircle className={styles.demoBtn__icon} size={32} />
+    </a>
+  );
+};
+
+export { Github, Linkedin, Email, Behance, Demo, Repository };

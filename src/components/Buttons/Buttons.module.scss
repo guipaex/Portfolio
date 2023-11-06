@@ -1,52 +1,82 @@
 @import "../../styles/variables";
-.cta {
-  position: relative;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 1rem;
-  width: 5rem;
-  height: 2.25rem;
-  border: 1px solid $Lime-60;
-  background: transparent;
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: 200ms;
-  overflow: hidden;
 
-  &__txt {
-    right: 0;
-    left: 0;
-    position: relative;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: $Night-20;
-    width: 130px;
-    transition: 200ms;
-  }
-  &__arrow {
-    position: absolute;
-    right: -2rem;
-    fill: $Night-20;
-    transition: 500ms;
-  }
-
-  &:hover {
-    .cta__arrow {
-      right: 0.5rem;
-      fill: $Night-80;
-    }
-    .cta__txt {
-      color: $Night-80;
-      left: -0.75rem;
-    }
-
-    width: 5.5rem;
-    background-color: $Lime;
-    color: $Night;
-  }
+button {
+  background: none;
+  border: none;
 }
 
 .socialLink {
   width: 2.3rem;
   height: 2.3rem;
+}
+
+.repoBtn {
+  transition: 300ms;
+  border: 1px solid $Night-80;
+  color: $Night-60;
+  padding: 0.7rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &__icon {
+    transition: 300ms;
+    position: absolute;
+    top: 0.3rem;
+    scale: (0.75);
+    left: -2.5rem;
+    color: $Magnolia;
+  }
+  &:hover {
+    .repoBtn__icon {
+      left: 0.7rem;
+    }
+    color: $Magnolia;
+    padding-left: 3.2rem;
+  }
+}
+
+.demoBtn {
+  transition: 300ms;
+  border: 1px solid $Lime;
+  color: $Lime;
+  padding: 0.7rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &__icon {
+    color: $Night;
+    transition: 300ms;
+    position: absolute;
+    top: 0.35rem;
+    scale: (0.75);
+    right: -2.35rem;
+  }
+  &::after {
+    content: "";
+    width: 2.7rem;
+    height: 2.7rem;
+    position: absolute;
+    top: 0;
+    right: -2.75rem;
+    margin: auto;
+    z-index: -1;
+    background-color: $Lime;
+    border-radius: 1.5rem;
+    transition: 200ms;
+  }
+  &:hover {
+    font-weight: 600;
+    color: $SmokyBlack;
+    padding-right: 3.2rem;
+    .demoBtn__icon {
+      right: 0.7rem;
+    }
+    &::after {
+      right: 0;
+      width: 100%;
+    }
+  }
 }
