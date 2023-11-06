@@ -21,7 +21,7 @@ export default function RepoCard(repo: Props) {
 
   let imgURL: string;
   if (repo.tags.includes("react")) {
-    imgURL = `https://raw.githubusercontent.com/guipaex/${repo.name}/master/public/assets/thumb.png`;
+    imgURL = `https://raw.githubusercontent.com/guipaex/${repo.name}/master/public/assets/thumb.jpg`;
   } else {
     imgURL = `https://raw.githubusercontent.com/guipaex/${repo.name}/master/assets/thumb.png`;
   }
