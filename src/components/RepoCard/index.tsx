@@ -1,6 +1,5 @@
 import styles from "./RepoCard.module.scss";
-import { VscGithub } from "react-icons/vsc";
-import { VerProjeto } from "../Buttons";
+import { Repository, VerProjeto } from "../Buttons";
 import Tag from "../Tag";
 
 interface Props {
@@ -41,9 +40,7 @@ export default function RepoCard(repo: Props) {
         </ul>
         <p className={styles.card__description}>{repo.desc}</p>
         <div className={styles.card__links}>
-          <a href={`${repo.repoLink}`} target='_blank'>
-            <VscGithub size={32} className={styles.gitButton} />
-          </a>
+          <Repository text={"Repository"} link={repo.repoLink} />
           <a href={`${repo.demoLink}`} target='_blank'>
             <VerProjeto />
           </a>
