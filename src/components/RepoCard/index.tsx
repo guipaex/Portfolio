@@ -1,5 +1,5 @@
 import styles from "./RepoCard.module.scss";
-import { Repository, VerProjeto } from "../Buttons";
+import { Demo, Repository } from "../Buttons";
 import Tag from "../Tag";
 
 interface Props {
@@ -41,9 +41,7 @@ export default function RepoCard(repo: Props) {
         <p className={styles.card__description}>{repo.desc}</p>
         <div className={styles.card__links}>
           <Repository text={"Repository"} link={repo.repoLink} />
-          <a href={`${repo.demoLink}`} target='_blank'>
-            <VerProjeto />
-          </a>
+          <Demo text={"See the Project"} link={repo.demoLink} />
         </div>
       </div>
     </div>
