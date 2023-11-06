@@ -11,9 +11,9 @@ export default function Home() {
           Guilherme Paes<span className={styles.text__highlight}>.</span>
         </h1>
         <p className={styles.container__text}>
-          A <span className={styles.bold}>Web Developer</span> and <span className={styles.bold}>Designer</span>.
+          A <span className={styles.bold}>Web Developer</span> <br /> and <span className={styles.bold}>Designer</span>.
         </p>
-        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500}>
+        <Link to='about' smooth={true}>
           <FaChevronDown className={styles.skipper__arrow} />
         </Link>
       </div>

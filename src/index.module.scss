@@ -1,0 +1,45 @@
+@import "./styles/variables";
+@import "./styles/animations";
+@import "./styles/breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $Night;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.bgFX {
+  content: "";
+  position: absolute;
+  top: 70vh;
+  left: -50vw;
+  height: 100vw;
+  width: 100vw;
+  transform: scale(2);
+  background: radial-gradient(rgba(192, 255, 0, 0.05) 0%, transparent 35%);
+  z-index: -100;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  width: 0.2rem;
+  border-radius: 13px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: $Lime;
+}

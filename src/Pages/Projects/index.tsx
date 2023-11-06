@@ -26,7 +26,8 @@ export default function Projects() {
   return (
     <section className={styles.container} id='projects'>
       <h2 className={styles.title}>
-        Selected Works<span className={styles.title__dot}>.</span>
+        Selected <span className={styles.title__highlight}>Works</span>
+        <span className={styles.title__dot}>.</span>
       </h2>
       <div className={styles.projectsGallery}>
         {projects.map((project) => (

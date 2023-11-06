@@ -32,17 +32,15 @@
   }
 
   &__title {
-    font-size: clamp(2rem, 10vw, 5rem);
-    margin: 0;
+    font-size: clamp(2rem, 10vw, 4rem);
+    margin: 0.25rem auto;
     font-weight: 900;
     color: $Magnolia;
   }
   &__text {
     font-weight: 300;
-    margin: 0.25rem;
-    width: 60vw;
     color: $Magnolia;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 5vw, 2.25rem);
   }
 }
 .text__highlight {
@@ -63,5 +61,5 @@
   fill: $Lime;
   width: 2rem;
   height: 2rem;
-  animation: arrowDown ease-in-out 2s infinite alternate;
+  animation: float ease-in-out 2s infinite alternate;
 }
