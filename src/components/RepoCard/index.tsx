@@ -23,7 +23,7 @@ export default function RepoCard(repo: Props) {
   if (repo.tags?.includes("react")) {
     imgURL = `https://raw.githubusercontent.com/guipaex/${repo.name}/master/public/assets/thumb.jpg`;
   } else if (repo.repoLink === "private") {
-    imgURL = `https://raw.githubusercontent.com/guipaex/Portfolio/master/assets/thumb_${repo.name}.jpg`;
+    imgURL = `https://github.com/guipaex/Portfolio/blob/714dc04426cc6bbc3ad8abb189912d0592c78b45/public/assets/thumb_sportflow.jpg?raw=true`;
     console.log(repo.repoLink);
   } else {
     imgURL = `https://raw.githubusercontent.com/guipaex/${repo.name}/master/assets/thumb.jpg`;
