@@ -50,12 +50,18 @@ interface ButtonProps {
 }
 
 const Repository = ({ text, link }: ButtonProps) => {
-  return (
+  if(link === 'private') {
+    return(
+      <a href={`${link}`} target='_blank' className={styles.repoBtn}>
+      <FaGithub className={styles.repoBtn__icon} size={32} />
+      Repositório Indisponível
+    </a>
+    )
+  } else return 
     <a href={`${link}`} target='_blank' className={styles.repoBtn}>
       <FaGithub className={styles.repoBtn__icon} size={32} />
       {text}
     </a>
-  );
 };
 
 const Demo = ({ text, link }: ButtonProps) => {

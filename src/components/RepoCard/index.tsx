@@ -7,7 +7,7 @@ interface Props {
   desc: string;
   demoLink: string | null;
   repoLink: string | null;
-  langsLink: string;
+  langsLink?: string;
   tags: Array<string>;
 }
 
