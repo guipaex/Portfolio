@@ -5,7 +5,7 @@ import styles from "./Buttons.module.scss";
 
 function Linkedin() {
   return (
-    <a href='https://www.linkedin.com/in/guilhermepaes/' target='_blank'>
+    <a href='https://www.linkedin.com/in/guilhermepaes/' target='_blank' rel='noreferrer'>
       <FaLinkedin className={styles.socialLink} />
     </a>
   );
@@ -13,7 +13,7 @@ function Linkedin() {
 
 function Behance() {
   return (
-    <a href='https://www.behance.net/guilhermepaes' target='_blank'>
+    <a href='https://www.behance.net/guilhermepaes' target='_blank' rel='noreferrer'>
       <FaBehance className={styles.socialLink} />
     </a>
   );
@@ -21,7 +21,7 @@ function Behance() {
 
 function Github() {
   return (
-    <a href='https://github.com/guipaex' target='_blank'>
+    <a href='https://github.com/guipaex' target='_blank' rel='noreferrer'>
       <FaGithub className={styles.socialLink} />
     </a>
   );
@@ -29,7 +29,7 @@ function Github() {
 
 function Email() {
   return (
-    <a href='mailto:guipaex@gmail.com' target='_blank'>
+    <a href='mailto:guipaex@gmail.com' target='_blank' rel='noreferrer'>
       <FaRegEnvelope className={styles.socialLink} />
     </a>
   );
@@ -50,23 +50,26 @@ interface ButtonProps {
 }
 
 const Repository = ({ text, link }: ButtonProps) => {
-  if(link === 'private') {
-    return(
-      <a href={`${link}`} target='_blank' className={styles.repoBtn}>
-      <FaGithub className={styles.repoBtn__icon} size={32} />
-      Repositório Indisponível
-    </a>
-    )
-  } else return 
-    <a href={`${link}`} target='_blank' className={styles.repoBtn}>
-      <FaGithub className={styles.repoBtn__icon} size={32} />
-      {text}
-    </a>
+  if (link === "private") {
+    return (
+      <a href={`${link}`} target='_blank' className={styles.repoBtn} rel='noreferrer' style={{ display: "none" }}>
+        <FaGithub className={styles.repoBtn__icon} size={32} />
+        {text}
+      </a>
+    );
+  } else {
+    return (
+      <a href={`${link}`} target='_blank' className={styles.repoBtn} rel='noreferrer'>
+        <FaGithub className={styles.repoBtn__icon} size={32} />
+        {text}
+      </a>
+    );
+  }
 };
 
 const Demo = ({ text, link }: ButtonProps) => {
   return (
-    <a href={`${link}`} target='_blank' className={styles.demoBtn}>
+    <a href={`${link}`} target='_blank' className={styles.demoBtn} rel='noreferrer'>
       {text}
       <BsArrowUpRightCircle className={styles.demoBtn__icon} size={32} />
     </a>

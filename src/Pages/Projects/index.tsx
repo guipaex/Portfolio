@@ -30,15 +30,14 @@ export default function Projects() {
         <span className={styles.title__dot}>.</span>
       </h2>
       <div className={styles.projectsGallery}>
-      <RepoCard
-            key={'sportflow'}
-            name={'Sport Flow'}
-            repoLink={'#'}
-            desc={project.description}
-            demoLink={'https://sportflow.com.br'}
-            langsLink={project.languages_url}
-            tags={['Firebase', 'React', 'TypeScript']}
-          />
+        <RepoCard
+          key={"sportflow"}
+          name={"Sport Flow"}
+          repoLink={"private"}
+          desc={"Página de eventos esportivos, e rede social para atletas e organizações "}
+          demoLink={"https://sportflow.com.br"}
+          tags={["Firebase", "React", "TypeScript"]}
+        />
         {projects.map((project) => (
           <RepoCard
             key={project.id}
