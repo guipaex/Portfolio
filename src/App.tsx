@@ -5,10 +5,12 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Footer from "./components/Footer";
 import styles from "./index.module.scss";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <main>
+      <Analytics />
       <Header />
       <Home />
       <About />
